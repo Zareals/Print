@@ -12,52 +12,67 @@
     <div class="ticket">
       <div class="centered">
         <h2>Logo</h2>
-        <p>Adrese line</p>
-        <p>Ticket 249423014</p>
+        <span id="adresse">Adrese line</span><span> - </span><span id="TimeDate"></span>
+        <br><span>Ticket   </span><span id="TicketNumber"></span>
       </div>
       <div id="Bar" class="centered">
         <svg id="barcode"></svg>
       </div>
       <div class="grid-container">
         <div class="grid-item">
-          <p>GR: 1</p>
+          <p></p><span>GR: </span><span id="GRValue" class="GR"></span>
           <p>Gain min/max</p>
         </div>
         <div class="grid-item right">
-          <p>3 * 1 TND = 3 TND</p>
-          <p>2 / 8 TND</p>
+          <p></p><span id="Combi"></span><span> * </span><span class="GR"></span><span> TND</span><span> = </span><span id="mise"></span><span> TND</span>
+          <p></p><span class="MinGain"></span><span> / </span><span class="MaxGain"></span><span>  TND</span>
         </div>
       </div>
 
       <div class="lineDashed"></div>
-      <p class="gameTitle">249423014  Spin&Win</p>
-      
-      <div class="grid-container">
-        <div class="grid-item">
-          <p class="gameInfo">19:32 Sector: B</p>
+      <div id="ChoiceList">
+        <div>
+        <p class="gameTitle">249423014  Spin&Win</p>
+        
+        <div class="grid-container">
+          <div class="grid-item">
+            <p class="gameInfo">19:32 Sector: B</p>
+          </div>
+          <div class="grid-item right">
+            <p class="Coutes">6:00</p>
+          </div>
         </div>
-        <div class="grid-item right">
-          <p class="gameInfo">6:00</p>
+  
+        <div class="lineDotted"></div>
         </div>
+        <p class="gameTitle">249423014  Spin&Win</p>
+  
+        <div class="grid-container">
+          <div class="grid-item">
+            <p class="gameInfo">19:32 Sector: B</p>
+          </div>
+          <div class="grid-item right">
+            <p class="Coutes">6:00</p>
+          </div>
+        </div>
+
+
       </div>
-
-      <div class="lineDotted"></div>
-      <p class="gameTitle">249423014  Spin&Win</p>
-
-      <div class="grid-container">
-        <div class="grid-item">
-          <p class="gameInfo">19:32 Sector: B</p>
-        </div>
-        <div class="grid-item right">
-          <p class="gameInfo">6:00</p>
-        </div>
-      </div>
-
       <div class="lineDashed"></div>
-      <p>249423014  Spin&Win</p>
-    
-      
-
+      <p></p>
+      <div class="grid-container">
+        <div class="grid-item">
+          <b>
+          <p>Mise Totale</p>
+          <p>Gain min/max</p>
+          </b>
+        </div>
+        <div class="grid-item right">
+          <b>
+          <p></p><span id="MiseTotale"></span><span>TND</span>
+          <p></p><span class="MinGain"></span><span> / </span><span class="MaxGain"></span><span>  TND</span>
+          </b>
+        </div>
       </div> 
     <button id="btnPrint" class="hidden-print">Print</button>
     <script src="print.js"></script>
